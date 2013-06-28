@@ -15,5 +15,15 @@ namespace readMail
         {
             InitializeComponent();
         }
+
+        private void index_Load(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("56lea.com");
+        }
+
+        private void btn_set_Click(object sender, EventArgs e)
+        {
+            winManager.getThis().bsWin.Show();
+        }
     }
 }

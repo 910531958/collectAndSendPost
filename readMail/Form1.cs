@@ -77,6 +77,7 @@ namespace readMail
             html = regex2.Replace(html, ""); //过滤script属性 
             html = html.Replace("<strong>", "[b]");
             html = html.Replace("</strong>", "[/b]");
+            html = html.Replace("&mdash;", "--");
             int n=list.Length;
             for (int i = 0; i < n;i++ )
             {
